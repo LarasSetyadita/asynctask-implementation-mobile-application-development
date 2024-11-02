@@ -1,0 +1,29 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <!-- ProgressBar dengan max 100 untuk tracking progres -->
+    <ProgressBar
+        android:id="@+id/pb"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:max="100"
+        style="?android:attr/progressBarStyleHorizontal"/>
+
+    <Button
+        android:id="@+id/btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Go" />
+
+    <!-- TextView opsional untuk menampilkan progres atau hasil akhir -->
+    <TextView
+        android:id="@+id/tvProgress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Progres akan tampil di sini" />
+</LinearLayout>
